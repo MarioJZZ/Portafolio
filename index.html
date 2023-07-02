@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./dist/output.min.css">
+    <link rel="stylesheet" href="./css/style.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <title>Portafolio</title>
+
+
+</head>
+
+<body>
+
+    <header
+        class="sticky top-0 z-10 bg-blue-dark lg:opacity-90 text-white md:top-auto ">
+        <section class="mx-auto container flex items-center justify-between p-4 font-semibold">
+            <h1 class="text-2xl font-semibold">
+                <a href="/">🚀 Portfolio</a>
+            </h1>
+            <div>
+                <button id="hamburger-button" class="relative h-8 w-8 cursor-pointer text-3xl lg:hidden">
+                    <div
+                        class="absolute top-4 -mt-0.5 h-1 w-8 rounded bg-white transition-all duration-500 before:absolute before:h-1 before:w-8 before:-translate-x-4 before:-translate-y-3 before:rounded before:bg-white before:transition-all before:duration-500 before:content-[''] after:absolute after:h-1 after:w-8 after:-translate-x-4 after:translate-y-3 after:rounded after:bg-white after:transition-all after:duration-500 after:content-['']">
+                    </div>
+                </button>
+                <nav class="hidden text-xl lg:block " aria-label="main">
+                    <a href="#section1" class="w-full p-3 hover:bg-gray-200 hover:bg-opacity-25 rounded-sm">Sobre mí</a>
+                    <a href="#section2" class="w-full p-3 hover:bg-gray-200 hover:bg-opacity-25 rounded-sm">Skill</a>
+                    <a href="#section3" class="w-full p-3 hover:bg-gray-200 hover:bg-opacity-25 rounded-sm">Hobbies</a>
+                    <a href="#section4"
+                        class="w-full p-3 hover:bg-gray-200 hover:bg-opacity-25 rounded-sm">Formación</a>
+                    <a href="#section5" class="w-full p-3 hover:bg-gray-200 hover:bg-opacity-25 rounded-sm">Experiencia
+                        laboral</a>
+                    <a href="#section6"
+                        class="w-full p-3 hover:bg-gray-200 hover:bg-opacity-25 rounded-sm">Proyectos</a>
+                    <a href="#section7" class="w-full p-3 hover:bg-gray-200 hover:bg-opacity-25 rounded-sm">Contacto</a>
+                </nav>
+            </div>
+        </section>
+        <section id="mobile-menu"
+            class="top-68 justify-center absolute hidden w-full origin-top animate-open-menu flex-col bg-blue-dark text-2xl text-white text-center">
+            <nav class="flex min-h-screen flex-col items-center py-8" aria-label="mobile">
+                <a href="#section1"
+                    class="w-full py-6 hover:bg-gray-300 hover:bg-opacity-25 hover:border hover:border-1 hover:border-gray-500">Sobre
+                    mí</a>
+                <a href="#section2"
+                    class="w-full py-6 hover:bg-gray-300 hover:bg-opacity-25 hover:border hover:border-1 hover:border-gray-500">Skill</a>
+                <a href="#section3"
+                    class="w-full py-6 hover:bg-gray-300 hover:bg-opacity-25 hover:border hover:border-1 hover:border-gray-500">Hobbies</a>
+                <a href="#section4"
+                    class="w-full py-6 hover:bg-gray-300 hover:bg-opacity-25 hover:border hover:border-1 hover:border-gray-500">Formación</a>
+                <a href="#section5"
+                    class="w-full py-6 hover:bg-gray-300 hover:bg-opacity-25 hover:border hover:border-1 hover:border-gray-500">Experiencia
+                    laboral</a>
+                <a href="#section6"
+                    class="w-full py-6 hover:bg-gray-300 hover:bg-opacity-25 hover:border hover:border-1 hover:border-gray-500">Proyectos</a>
+                <a href="#section7"
+                    class="w-full py-6 hover:bg-gray-300 hover:bg-opacity-25 hover:border hover:border-1 hover:border-gray-500">Contacto</a>
+            </nav>
+        </section>
+    </header>
+
+
+
+        <!-- Hero Section -->
+        <section class="flex mt-28 justify-between items-center bg-section container mx-auto rounded-md shadow-lg">
+            <div class="flex flex-col md:flex-row p-10 md:gap-10" data-aos="zoom-in" data-aos-easing="linear"
+                data-aos-duration="800">
+                <div class="order-1 md:order-0 w-full md:w-1/2 lg:w-3/4 flex flex-col">
+                    <p class="text-xl md:text-2xl lg:text-3xl mb-10 font-semibold text-center">¡Explora mi Portafolio
+                        Web
+                        para Experiencias Web Innovadoras!</p>
+                    <p class="mb-4 text-xl text-justify">Mi nombre es Mario y soy un apasionado del
+                        desarrollo
+                        web. Aquí encontrarás una selección de mi trabajo, proyectos destacados y las habilidades que he
+                        adquirido a lo largo de mi carrera profesional. Mi enfoque está en crear experiencias web
+                        atractivas
+                        y funcionales, brindando soluciones innovadoras en la creación de interfaces de usuario. Pero mi
+                        historia no se trata solo de mí, sino de los proyectos que podemos trabajar en conjunto. Me
+                        emociona
+                        compartir mi pasión y conocimiento contigo, y colaborar para convertir tus ideas en realidad.
+                        <br><br> La web es un lienzo en blanco esperando ser transformado en una experiencia única.
+                        ¡Permítete descubrir un nuevo horizonte digital de la mano de mi experiencia, y trabajemos en
+                        una
+                        presencia en línea que capture la atención de tu audiencia!
+                    </p>
+
+                    <div class="flex justify-center md:justify-start gap-3">
+                        <a href="https://github.com/MarioJZZ" target="_blank"
+                            class="transition hover:scale-110 px-3 py-2 rounded-lg bg-gray-200 hover:bg-white border border-gray-300">
+                            <img alt="Google Icon" src="./assets/img/icons8-github.svg" class="w-8">
+                        </a>
+                        <a href="https://www.linkedin.com/in/mario-jim%C3%A9nez-b16a0823b/" target="_blank"
+                            class="transition hover:scale-110 px-3 py-2 rounded-lg bg-gray-200 hover:bg-white border border-gray-300">
+                            <img alt="GitHub Icon" src="./assets/img/icons8-linkedin.svg" class="w-8">
+                        </a>
+                    </div>
+                </div>
+                <div class="order-0 md:order-1 w-full mb-10 md:w-1/2 lg:w-2/4 flex justify-center items-center">
+                    <img src="./assets/img/photo_perfil.jpg" class="rounded-full w-44 md:w-72 lg:w-96"
+                        alt="foto de perfil">
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- Sobre mi Section -->
+        <section class="mt-32 flex justify-start flex-col bg-section container mx-auto rounded-md shadow-lg"
+            id="section1">
+            <div class="flex flex-col text-center p-10" data-aos="zoom-in-up" data-aos-easing="linear"
+                data-aos-duration="700">
+                <p class="font-semibold mb-10 text-xl md:text-2xl lg:text-3xl">Sobre mí</p>
+                <p class="text-justify text-xl">Soy apasionado por la tecnología y tengo un fuerte deseo de
+                    mejorar
+                    constantemente mis habilidades. Durante mi carrera universitaria adquirí experiencia en análisis,
+                    diseño
+                    y
+                    desarrollo de software, planificación y control de TI, gestión de recursos y análisis cuantitativo
+                    para
+                    la
+                    inteligencia empresarial. Como profesional de TI, estoy orgulloso de mi capacidad para contribuir en
+                    cualquier proyecto o equipo. <br><br>
+                    Cada día es una oportunidad para aprender algo nuevo, por eso constantemente estoy perfeccionando
+                    mis
+                    habilidades en desarrollo de front-end y análisis de datos. Con una sólida ética de trabajo y
+                    capacidad
+                    de
+                    adaptación, prospero tanto en entornos de equipo como al trabajar de forma independiente. Mi
+                    compromiso
+                    inquebrantable con el crecimiento personal y profesional me inspira a buscar nuevas oportunidades
+                    para
+                    ampliar mis conocimientos y habilidades.</p>
+            </div>
+        </section>
+
+
+
+        <!-- Skill Section -->
+        <section class="mt-32 flex flex-col text-center bg-section container mx-auto rounded-md shadow-lg"
+            id="section2">
+            <div class="flex flex-col p-10" data-aos="zoom-out-right" data-aos-easing="linear" data-aos-duration="700">
+                <p class="text-3xl font-semibold mb-10">Skills</p>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 justify-between gap-2">
+                    <div class="bg-white p-14 gap-3 flex flex-col justify-between items-center rounded-md w-full  shadow-sm"
+                        data-aos="flip-left" data-aos-duration="1300">
+                        <img class="w-24 transition hover:scale-110" src="./assets/img/icons8-html.svg" alt="logo">
+                        <p class="font-semibold">HTML</p>
+                    </div>
+                    <div class="bg-white p-14 gap-3 flex flex-col justify-between items-center rounded-md w-full shadow-sm"
+                        data-aos="flip-left" data-aos-duration="1500">
+                        <img class="w-24 transition hover:scale-110" src="./assets/img/icons8-css.svg" alt="logo">
+                        <p class="font-semibold">CSS</p>
+                    </div>
+                    <div class="bg-white p-14 gap-3 flex flex-col justify-between items-center rounded-md w-full shadow-sm"
+                        data-aos="flip-left" data-aos-duration="1500">
+                        <img class="w-24 transition hover:scale-110" src="./assets/img/icons8-javascript.svg"
+                            alt="logo">
+                        <p class="font-semibold">JavaScript</p>
+                    </div>
+                    <div class="bg-white p-14 gap-3 flex flex-col justify-between items-center rounded-md w-full shadow-sm"
+                        data-aos="flip-left" data-aos-duration="1500">
+                        <img class="w-24 transition hover:scale-110" src="./assets/img/icons8-tailwind-css.svg"
+                            alt="logo">
+                        <p class="font-semibold">Tailwind CSS</p>
+                    </div>
+                    <div class="bg-white p-14 gap-3 flex flex-col justify-between items-center rounded-md w-full shadow-sm"
+                        data-aos="flip-left" data-aos-duration="1500">
+                        <img class="w-24 transition hover:scale-110" src="./assets/img/icons8-sass.svg" alt="logo">
+                        <p class="font-semibold">SASS</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Hobbies Section -->
+        <section class="mt-32 flex flex-col text-center bg-section container mx-auto rounded-md shadow-lg"
+            id="section3">
+            <div class="flex flex-col p-10" data-aos="zoom-out-right" data-aos-easing="linear" data-aos-duration="700">
+                <p class="text-3xl font-semibold mb-10">Hobbies</p>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 justify-between gap-2">
+                    <div class="bg-white p-14 gap-3 flex flex-col justify-between items-center rounded-md w-full shadow-sm"
+                        data-aos="flip-right" data-aos-duration="1300">
+                        <img class="w-24 transition hover:scale-110" src="./assets/img/icons8-libros-100.png"
+                            alt="logo">
+                        <p class="font-semibold">Leer</p>
+                    </div>
+                    <div class="bg-white p-14 gap-3 flex flex-col justify-between items-center rounded-md w-full shadow-sm"
+                        data-aos="flip-right" data-aos-duration="1300">
+                        <img class="w-24 transition hover:scale-110"
+                            src="./assets/img/icons8-cycling-mountain-bike-skin-type-4-96.png" alt="logo">
+                        <p class="font-semibold">Deportes</p>
+                    </div>
+                    <div class="bg-white p-14 gap-3 flex flex-col justify-between items-center rounded-md w-full shadow-sm"
+                        data-aos="flip-right" data-aos-duration="1300">
+                        <img class="w-24 transition hover:scale-110"
+                            src="./assets/img/icons8-chef-cooking-skin-type-1-96.png" alt="logo">
+                        <p class="font-semibold">Cocina</p>
+                    </div>
+                    <div class="bg-white p-14 gap-3 flex flex-col justify-between items-center rounded-md w-full shadow-sm"
+                        data-aos="flip-right" data-aos-duration="1300">
+                        <img class="w-24 transition hover:scale-110"
+                            src="./assets/img/icons8-sistema-de-entretenimiento-super-nintendo-96.png" alt="logo">
+                        <p class="font-semibold">Videojuegos</p>
+                    </div>
+                    <div class="bg-white p-14 gap-3 flex flex-col justify-between items-center rounded-md w-full shadow-sm"
+                        data-aos="flip-right" data-aos-duration="1300">
+                        <img class="w-24 transition hover:scale-110" src="./assets/img/icons8-google-scholar.svg"
+                            alt="logo">
+                        <p class="font-semibold">Aprendizaje</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Formación Académica -->
+        <section class="flex flex-col mt-32 bg-section p-10 container mx-auto rounded-md shadow-lg" id="section4">
+            <div data-aos="zoom-out-left" data-aos-easing="linear" data-aos-duration="700">
+                <div class="text-center text-3xl mb-10">
+                    <p class="font-semibold">Formación académica</p>
+                </div>
+                <div class="grid grid-cols-1 lg:grid-cols-3 justify-between gap-2">
+                    <div class="p-14 w-auto bg-white rounded-md flex flex-col justify-between items-center text-center shadow-sm"
+                        data-aos="flip-left" data-aos-duration="1300">
+                        <img src="./assets/img/UCR-logo.png" class="object-contain w-24 h-24 transition hover:scale-110"
+                            alt="logo">
+                        <div class="mt-5 w-full">
+                            <p class="font-semibold text-lg mb-2">Informática Empresarial</p>
+                            <p class="text-gray-600">2018-2022</p>
+                        </div>
+                    </div>
+                    <div class="p-14 w-auto bg-white rounded-md flex flex-col justify-between items-center text-center shadow-sm"
+                        data-aos="flip-left" data-aos-duration="1300">
+                        <img src="./assets/img/edteam-logo.png"
+                            class="object-contain w-24 h-24 transition hover:scale-110" alt="logo">
+                        <div class="mt-5 w-full">
+                            <p class="font-semibold text-lg mb-2">EDTeam</p>
+                            <p class="text-gray-600">2022-2023</p>
+                        </div>
+                    </div>
+                    <div class="p-14 w-auto bg-white rounded-md flex flex-col justify-between items-center text-center shadow-sm"
+                        data-aos="flip-left" data-aos-duration="1300">
+                        <img src="./assets/img/one-logo.png" class="object-contain w-24 h-24 transition hover:scale-110"
+                            alt="logo">
+                        <div class="mt-5 w-full">
+                            <p class="font-semibold text-lg mb-2">Oracle Next Education <br> Frontend Developer</p>
+                            <p class="text-gray-600">2023</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experiencia Laboral -->
+        <section class="mt-32 bg-section p-10 container mx-auto rounded-md shadow-lg" id="section5"
+            data-aos="zoom-out-right" data-aos-easing="linear" data-aos-duration="700">
+            <div class="text-center text-3xl mb-10">
+                <p class="font-semibold">Experiencia laboral</p>
+            </div>
+            <div class="grid grid-cols-1 lg:grid-cols-3 justify-between gap-2">
+                <div class="p-14 bg-white rounded-md w-full flex flex-col justify-between items-center text-center shadow-sm"
+                    data-aos="flip-right" data-aos-duration="1300">
+                    <div><img src="./assets/img/KPMGlogo.webp"
+                            class="object-contain w-24 h-24 rounded-sm transition hover:scale-110" alt="logo"></div>
+                    <div class="mt-5 flex flex-col gap-1">
+                        <p class="font-semibold">KPMG Costa Rica</p>
+                        <p class="font-normal">Asistente de Auditoría TI</p>
+                        <p class="text-gray-600">may. 2023 - actualidad </p>
+                    </div>
+                </div>
+                <div class="p-14 bg-white rounded-md w-full flex flex-col justify-between items-center text-center shadow-sm"
+                    data-aos="flip-right" data-aos-duration="1300">
+                    <div><img src="./assets/img/UCR-logo.png"
+                            class="object-contain w-24 h-24 rounded-sm transition hover:scale-110" alt="logo"></div>
+                    <div class="mt-5 flex flex-col gap-1">
+                        <p class="font-semibold">Universidad de Costa Rica</p>
+                        <p class="font-normal">Editor colaborador de la Revista InterSedes</p>
+                        <p class="text-gray-600">abr. 2021 - mar. 2023 · 2 años</p>
+                    </div>
+                </div>
+                <div class="p-14 bg-white rounded-md w-full flex flex-col justify-between items-center text-center shadow-sm"
+                    data-aos="flip-right" data-aos-duration="1300">
+                    <div><img src="./assets/img/JAZZGSlogo.jpg"
+                            class="object-contain w-24 h-24 rounded-sm transition hover:scale-110" alt="logo">
+                    </div>
+                    <div class="mt-5 flex flex-col gap-1">
+                        <p class="font-semibold">JAZZGS - Contrato de prácticas</p>
+                        <p class="font-normal">Frontend Developer</p>
+                        <p class="text-gray-600">ago. 2022 - nov. 2022 · 4 meses</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Proyectos Section -->
+        <section class="mt-32 bg-section p-10 container mx-auto rounded-md shadow-lg" id="section6">
+            <div data-aos="zoom-out-left" data-aos-easing="linear" data-aos-duration="700">
+                <div class="text-center text-3xl mb-10">
+                    <p class="font-semibold">Proyectos - Ejercicios</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 justify-between gap-2 m-2 p-4">
+                    <div
+                        class="bg-white p-14 flex flex-col justify-between item-center w-full text-center gap-2 transition hover:scale-105 shadow-sm rounded-md">
+                        <p class="font-semibold">Encriptador</p>
+                        <p class="text-gray-600">2023</p>
+                        <div class="flex justify-evenly gap-2">
+                            <img class="w-6" src="./assets/img/icons8-html.svg" alt="HTML">
+                            <img class="w-6" src="./assets/img/icons8-css.svg" alt="CSS">
+                            <img class="w-6" src="./assets/img/icons8-tailwind-css.svg" alt="Tailwind CSS">
+                            <img class="w-6" src="./assets/img/icons8-javascript.svg" alt="JavaScript">
+                        </div>
+                        <div class="flex flex-col mt-2 gap-2 items-center">
+                            <a href=""
+                                class="bg-blue-medium hover:hover:bg-orange-medium text-white font-semibold rounded-md w-28 text-center transition hover:scale-105 py-1">Demo</a>
+                            <a href=""
+                                class="bg-blue-medium hover:hover:bg-orange-medium text-white font-semibold rounded-md w-28 text-center transition hover:scale-105 py-1">Repositorio</a>
+                        </div>
+                    </div>
+                    <div
+                        class="bg-white p-14 flex flex-col justify-between item-center w-full text-center gap-2 transition hover:scale-105 shadow-sm rounded-md">
+                        <p class="font-semibold">Digital Ocean</p>
+                        <p class="text-gray-600">2022</p>
+                        <div class="flex justify-evenly gap-2">
+                            <img class="w-6" src="./assets/img/icons8-html.svg" alt="HTML">
+                            <img class="w-6" src="./assets/img/icons8-css.svg" alt="CSS">
+                            <img class="w-6" src="./assets/img/icons8-tailwind-css.svg" alt="Tailwind CSS">
+                            <img class="w-6" src="./assets/img/icons8-vue-js.svg" alt="Vue.js">
+                        </div>
+                        <div class="flex flex-col mt-2 gap-2 items-center">
+                            <a href=""
+                                class="bg-blue-medium hover:hover:bg-orange-medium text-white font-semibold rounded-md w-28 text-center transition hover:scale-105 py-1">Demo</a>
+                            <a href=""
+                                class="bg-blue-medium hover:hover:bg-orange-medium text-white font-semibold rounded-md w-28 text-center transition hover:scale-105 py-1">Repositorio</a>
+                        </div>
+                    </div>
+                    <div
+                        class="bg-white p-14 flex flex-col justify-between item-center w-full text-center gap-2 transition hover:scale-105 shadow-sm rounded-md">
+                        <p class="font-semibold">Postcast FM</p>
+                        <p class="text-gray-600">2022</p>
+                        <div class="flex justify-evenly gap-2">
+                            <img class="w-6" src="./assets/img/icons8-wordpress.svg" alt="Wordpress">
+                            <img class="w-6" src="./assets/img/icons8-oreja.svg" alt="Bootstrap">
+                        </div>
+                        <div class="flex flex-col mt-2 gap-2 items-center">
+                            <a href=""
+                                class="bg-blue-medium hover:hover:bg-orange-medium text-white font-semibold rounded-md w-28 text-center transition hover:scale-105 py-1">Demo</a>
+                            <a href=""
+                                class="bg-blue-medium hover:hover:bg-orange-medium text-white font-semibold rounded-md w-28 text-center transition hover:scale-105 py-1">Repositorio</a>
+                        </div>
+                    </div>
+                    <div
+                        class="bg-white p-14 flex flex-col justify-between item-center w-full text-center gap-2 transition hover:scale-105 shadow-sm rounded-md">
+                        <p class="font-semibold">Web site comercio</p>
+                        <p class="text-gray-600">2022</p>
+                        <div class="flex justify-evenly gap-2">
+                            <img class="w-6" src="./assets/img/icons8-html.svg" alt="HTML">
+                            <img class="w-6" src="./assets/img/icons8-css.svg" alt="CSS">
+                            <img class="w-6" src="./assets/img/icons8-javascript.svg" alt="JavaScript">
+                        </div>
+                        <div class="flex flex-col mt-2 gap-2 items-center">
+                            <a href=""
+                                class="bg-blue-medium hover:hover:bg-orange-medium text-white font-semibold rounded-md w-28 text-center transition hover:scale-105 py-1">Demo</a>
+                            <a href=""
+                                class="bg-blue-medium hover:hover:bg-orange-medium text-white font-semibold rounded-md w-28 text-center transition hover:scale-105 py-1">Repositorio</a>
+                        </div>
+                    </div>
+                    <div
+                        class="bg-white p-14 flex flex-col justify-between item-center w-full text-center gap-2 transition hover:scale-105 shadow-sm rounded-md">
+                        <p class="font-semibold">Cuadricula</p>
+                        <p class="text-gray-600">2022</p>
+                        <div class="flex justify-evenly gap-2">
+                            <img class="w-6" src="./assets/img/icons8-html.svg" alt="HTML">
+                            <img class="w-6" src="./assets/img/icons8-css.svg" alt="CSS">
+                            <img class="w-6" src="./assets/img/edgrid-logo.png" alt="EDGRID">
+                        </div>
+                        <div class="flex flex-col mt-2 gap-2 items-center">
+                            <a href=""
+                                class="bg-blue-medium hover:hover:bg-orange-medium text-white font-semibold rounded-md w-28 text-center transition hover:scale-105 py-1">Demo</a>
+                            <a href=""
+                                class="bg-blue-medium hover:hover:bg-orange-medium text-white font-semibold rounded-md w-28 text-center transition hover:scale-105 py-1">Repositorio</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Contacto -->
+        <section
+            class="bg-section grid grid-cols-1 lg:grid-cols-2 items-center justify-center gap-10 mt-32 p-5 lg:p-10 container mx-auto rounded-md shadow-lg"
+            id="section7">
+
+            <div class="hidden w-full lg:h-2/2 lg:flex lg:justify-center shadow-md" data-aos="zoom-in-down"
+                data-aos-duration="1300">
+                <img src="./assets/img/contacto.jpg" class="rounded-md w-full object-cover" alt="imagen ilustrativa">
+            </div>
+
+            <div class="w-full h-full bg-white flex flex-col justify-evently px-4 lg:px-12 shadow-md overflow-hidden rounded-lg"
+                data-aos="zoom-in-up" data-aos-duration="1300">
+                <div class="mt-12">
+                    <p class="text-3xl font-semibold text-gray-800 mb-6">Contacto</p>
+                    <p class="text-xl mb-6">¿Quieres contactarme? <br>
+                        Complete el siguiente formulario y me pondré en contacto con usted lo antes posible.</p>
+                </div>
+                <form action="#" method="POST" netlify>
+                    <div class="mb-6">
+                        <label for="nombre" class="block text-gray-700 text-md font-bold mb-2">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre"
+                            class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-indigo-500"
+                            required>
+                    </div>
+                    <div class="mb-6">
+                        <label for="email" class="block text-gray-700 text-md font-bold mb-2">Email:</label>
+                        <input type="email" id="email" name="email"
+                            class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-indigo-500"
+                            required placeholder="ejemplo@email.com">
+                    </div>
+                    <div class="mb-6">
+                        <input type="text" id="asunto" name="asunto" placeholder="Asunto"
+                            class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-indigo-500"
+                            required>
+                    </div>
+                    <div class="mb-6">
+                        <textarea id="mensaje" name="mensaje" rows="4"
+                            class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-indigo-500 resize-none"
+                            required placeholder="Mensaje"></textarea>
+                    </div>
+                    <div class="flex items-center justify-start mb-5">
+                        <button type="submit"
+                            class="bg-blue-medium hover:hover:bg-orange-medium text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline transition hover:scale-105">Enviar
+                            mensaje</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+    <!-- Footer Section -->
+    <footer
+        class="bg-blue-dark opacity-90 py-4 mt-32 text-white shadow-md border border-b-0 border-t-1 border-gray-500">
+        <div class="container mx-auto flex flex-col items-center justify-between px-4 mt-1">
+            <div class="flex gap-4 mb-5 ">
+                <span class="mr-2 flex items-center text-lg">Sígueme en:</span>
+                <a href="https://github.com/MarioJZZ" target="_blank" rel="noopener noreferrer"
+                    class="bg-gray-200 rounded-md hover:bg-white transition hover:scale-110 px-2 py-1">
+                    <img src="./assets/img/icons8-github.svg" class="w-8" alt="">
+                </a>
+                <a href="https://www.linkedin.com/in/mario-jim%C3%A9nez-b16a0823b/" target="_blank"
+                    rel="noopener noreferrer"
+                    class="bg-gray-200 rounded-md hover:bg-white transition hover:scale-110 px-2 py-1">
+                    <img src="./assets/img/icons8-linkedin.svg" class="w-8" alt="">
+                </a>
+            </div>
+            <div class="">
+                <p class="text-lg">© 2023 Desarollado por: Mario Jiménez</p>
+            </div>
+        </div>
+        <div class="container mx-auto py-6 flex justify-center lg:justify-end">
+            <a href="#top" class="text-white hover:text-gray-200">
+                <i class="fas fa-arrow-up animate-icon"></i> Volver arriba
+            </a>
+        </div>
+    </footer>
+
+
+    <!-- JS Section -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+    <!-- Inicializa AOS -->
+    <script src="./js/aos.js"></script>
+    <script src="./js/menu.js"></script>
+
+</body>
+
+</html>
