@@ -3,10 +3,6 @@ module.exports = {
   content: [ './*html', './js/*.js'],
   theme: {
     container: {
-      padding: {
-        'DEFAULT': '',
-        '2xl': '',
-      },
     },
     extend: {
       fontFamily: {

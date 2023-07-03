@@ -1,3 +1,5 @@
+
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -8,6 +10,14 @@
   box-sizing: border-box;
   scroll-behavior: smooth;
   /* border: 1px solid red;  */
+}
+.animate__animated.animate__bounce {
+  --animate-duration: 2s;
+}
+
+:root{
+  --animate-duration: 8000ms;
+  --animate-delay: 0.9s;
 }
 
 body {
@@ -44,11 +54,4 @@ body {
   .toggle-btn {
       @apply [&>div::before]:translate-y-0 [&>div::before]:rotate-45 [&>div::after]:translate-y-0 [&>div::after]:-rotate-45 [&>div]:bg-transparent [&>div]:rotate-[720deg]
   }
-}
-
-.contenido {
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
