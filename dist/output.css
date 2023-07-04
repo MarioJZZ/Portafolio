@@ -1324,6 +1324,12 @@ body {
   outline-offset: 2px;
 }
 
+@media (min-width: 640px) {
+  .sm\:p-6 {
+    padding: 1.5rem;
+  }
+}
+
 @media (min-width: 768px) {
   .md\:top-auto {
     top: auto;
@@ -1363,6 +1369,10 @@ body {
 
   .md\:gap-10 {
     gap: 2.5rem;
+  }
+
+  .md\:p-8 {
+    padding: 2rem;
   }
 
   .md\:text-2xl {
@@ -1456,5 +1466,11 @@ body {
   .lg\:text-3xl {
     font-size: 1.875rem;
     line-height: 2.25rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .xl\:p-12 {
+    padding: 3rem;
   }
 }
