@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth hover:scroll-auto">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./assets/img/portfolio.png">
     <link rel="stylesheet" href="./dist/output.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,14 +13,13 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;1,300;1,400&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;1,300;1,400&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-
-
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 
     <title>Portafolio</title>
@@ -29,11 +29,9 @@
 
 <body>
 
-    <header class="sticky top-0 z-10 bg-blue-dark text-white md:top-auto ">
+    <header class="sticky lg:sticky lg:top-0 lg:z-10 top-0 z-10 bg-blue-dark text-white md:top-auto" id="sticky-header">
         <section class="mx-auto container flex items-center justify-between p-4 font-semibold">
-            <h1 class="text-2xl font-semibold">
-                <a href="/">🚀 Portfolio</a>
-            </h1>
+            <h1 class="text-2xl font-semibold"><a href="/">🚀 Portfolio</a></h1>
             <div>
                 <button id="hamburger-button" class="relative h-8 w-8 cursor-pointer text-3xl lg:hidden">
                     <div
@@ -57,7 +55,7 @@
         <!-- nav mobile -->
         <section id="mobile-menu"
             class="top-68 justify-center absolute hidden w-full origin-top animate-open-menu flex-col bg-blue-dark text-2xl text-white text-center">
-            <nav class="flex min-h-screen flex-col items-center py-8" aria-label="mobile">
+            <nav class="flex min-h-screen md:min-h-screen flex-col items-center py-8" aria-label="mobile">
                 <a href="#section1"
                     class="w-full py-6 hover:bg-gray-300 hover:bg-opacity-25 hover:border hover:border-1 hover:border-gray-500">Sobre
                     mí</a>
@@ -81,11 +79,11 @@
 
 
     <!-- Hero Section -->
-    <section class="flex mt-28 justify-between items-center bg-section container mx-auto rounded-md shadow-lg" data-aos="fade-up"
-    data-aos-anchor-placement="top-bottom">
-        <div class="flex flex-col md:flex-row p-10 md:gap-10">
+    <section class="flex mt-10 justify-between items-center bg-section container mx-auto rounded-md shadow-lg"
+        data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+        <div class="flex flex-col md:flex-row p-10 md:gap-10 animate__animated animate__pulse">
             <div class="order-1 md:order-0 w-full md:w-1/2 lg:w-3/4 flex flex-col">
-                <p class="text-xl md:text-2xl lg:text-3xl mb-10 font-semibold text-center animate__animated animate__pulse">¡Explora mi Portafolio
+                <p class="text-xl md:text-2xl lg:text-3xl mb-10 font-semibold text-center">¡Explora mi Portafolio
                     Web
                     para Experiencias Web Innovadoras!</p>
                 <p class="mb-4 text-xl text-justify">Mi nombre es Mario y soy un apasionado del
@@ -123,8 +121,8 @@
 
 
     <!-- Sobre mi Section -->
-    <section class="mt-32 flex justify-start flex-col bg-section container mx-auto rounded-md shadow-lg" id="section1" data-aos="fade-up"
-    data-aos-anchor-placement="center-bottom">
+    <section class="mt-36 flex justify-start flex-col bg-section container mx-auto rounded-md shadow-lg" id="section1"
+        data-aos="fade-up" data-aos-anchor-placement="center-bottom">
         <div class="flex flex-col text-center p-10 ">
             <p class="font-semibold mb-10 text-xl md:text-2xl lg:text-3xl">Sobre mí</p>
             <p class="text-justify text-xl">Soy apasionado por la tecnología y tengo un fuerte deseo de
@@ -153,10 +151,10 @@
 
 
     <!-- Skill Section -->
-    <section class="mt-32 flex flex-col text-center bg-section container mx-auto rounded-md shadow-lg" id="section2" data-aos="fade-up"
-    data-aos-anchor-placement="center-bottom">
+    <section class="mt-36 flex flex-col text-center bg-section container mx-auto rounded-md shadow-lg" id="section2"
+        data-aos="fade-up" data-aos-anchor-placement="center-bottom">
         <div class="flex flex-col p-10">
-            <p class="text-3xl font-semibold mb-10">Skills</p>
+            <p class="text-xl md:text-2xl lg:text-3xl font-semibold mb-10">Skills</p>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 justify-between gap-2">
                 <div
                     class="bg-white p-14 gap-3 flex flex-col justify-between items-center rounded-md w-full  shadow-sm">
@@ -184,10 +182,10 @@
     </section>
 
     <!-- Hobbies Section -->
-    <section class="mt-32 flex flex-col text-center bg-section container mx-auto rounded-md shadow-lg" id="section3" data-aos="fade-up"
-    data-aos-anchor-placement="center-bottom">
+    <section class="mt-36 flex flex-col text-center bg-section container mx-auto rounded-md shadow-lg" id="section3"
+        data-aos="fade-up" data-aos-anchor-placement="center-bottom">
         <div class="flex flex-col p-10">
-            <p class="text-3xl font-semibold mb-10">Hobbies</p>
+            <p class="text-xl md:text-2xl lg:text-3xl font-semibold mb-10">Hobbies</p>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 justify-between gap-2">
                 <div class="bg-white p-14 gap-3 flex flex-col justify-between items-center rounded-md w-full shadow-sm">
                     <img class="w-24 transition hover:scale-110" src="./assets/img/icons8-libros-100.png" alt="logo">
@@ -218,11 +216,11 @@
     </section>
 
     <!-- Formación Académica -->
-    <section class="flex flex-col mt-32 bg-section p-10 container mx-auto rounded-md shadow-lg" id="section4" data-aos="fade-up"
-    data-aos-anchor-placement="center-bottom">
+    <section class="flex flex-col mt-36 bg-section p-10 container mx-auto rounded-md shadow-lg" id="section4"
+        data-aos="fade-up" data-aos-anchor-placement="center-bottom">
         <div">
             <div class="text-center text-3xl mb-10">
-                <p class="font-semibold">Formación académica</p>
+                <p class="text-xl md:text-2xl lg:text-3xl font-semibold">Formación académica</p>
             </div>
             <div class="grid grid-cols-1 lg:grid-cols-3 justify-between gap-2">
                 <div
@@ -257,10 +255,10 @@
     </section>
 
     <!-- Experiencia Laboral -->
-    <section class="mt-32 bg-section p-10 container mx-auto rounded-md shadow-lg" id="section5" data-aos="fade-up"
-    data-aos-anchor-placement="center-bottom">
+    <section class="mt-36 bg-section p-10 container mx-auto rounded-md shadow-lg" id="section5" data-aos="fade-up"
+        data-aos-anchor-placement="center-bottom">
         <div class="text-center text-3xl mb-10">
-            <p class="font-semibold">Experiencia laboral</p>
+            <p class="text-xl md:text-2xl lg:text-3xl font-semibold">Experiencia laboral</p>
         </div>
         <div class="grid grid-cols-1 lg:grid-cols-3 justify-between gap-2">
             <div
@@ -286,7 +284,7 @@
             <div
                 class="p-14 bg-white rounded-md w-full flex flex-col justify-between items-center text-center shadow-sm">
                 <div><img src="./assets/img/JAZZGSlogo.jpg"
-                        class="object-contain w-24 h-24 rounded-sm transition hover:scale-110" alt="logo">
+                        class="object-contain w-24 h-24 rounded-sm transition hover:scale-110" alt="logo">t-40
                 </div>
                 <div class="mt-5 flex flex-col gap-1">
                     <p class="font-semibold">JAZZGS - Contrato de prácticas</p>
@@ -298,15 +296,15 @@
     </section>
 
     <!-- Proyectos Section -->
-    <section class="mt-32 bg-section p-10 container mx-auto rounded-md shadow-lg" id="section6" data-aos="fade-up"
-    data-aos-anchor-placement="center-bottom">
+    <section class="mt-36 bg-section p-10 container mx-auto rounded-md shadow-lg" id="section6" data-aos="fade-up"
+        data-aos-anchor-placement="center-bottom">
         <div>
             <div class="text-center text-3xl mb-10">
-                <p class="font-semibold">Proyectos - Ejercicios</p>
+                <p class="text-xl md:text-2xl lg:text-3xl font-semibold">Proyectos - Ejercicios</p>
             </div>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 justify-between gap-2 m-2 p-4">
+            <div class="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-5 justify-between gap-2 m-2 p-4">
                 <div
-                    class="bg-white p-14 flex flex-col justify-between item-center w-full text-center gap-2 transition hover:scale-105 shadow-sm rounded-md">
+                    class="bg-white p-14 flex flex-col justify-between item-center lg:w-full text-center gap-2 transition hover:scale-105 shadow-sm rounded-md">
                     <p class="font-semibold">Encriptador</p>
                     <p class="text-gray-600">2023</p>
                     <div class="flex justify-evenly gap-2">
@@ -316,14 +314,14 @@
                         <img class="w-6" src="./assets/img/icons8-javascript.svg" alt="JavaScript">
                     </div>
                     <div class="flex flex-col mt-2 gap-2 items-center">
-                        <a href=""
+                        <a href="https://encryptorr.netlify.app/" target="_blank"
                             class="bg-blue-medium hover:hover:bg-orange-medium text-white font-semibold rounded-md w-28 text-center transition hover:scale-105 py-1">Demo</a>
-                        <a href=""
+                        <a href="https://github.com/MarioJZZ/encriptados" target="_blank"
                             class="bg-blue-medium hover:hover:bg-orange-medium text-white font-semibold rounded-md w-28 text-center transition hover:scale-105 py-1">Repositorio</a>
                     </div>
                 </div>
                 <div
-                    class="bg-white p-14 flex flex-col justify-between item-center w-full text-center gap-2 transition hover:scale-105 shadow-sm rounded-md">
+                    class="bg-white p-14 flex flex-col justify-between item-center lg:w-full text-center gap-2 transition hover:scale-105 shadow-sm rounded-md">
                     <p class="font-semibold">Digital Ocean</p>
                     <p class="text-gray-600">2022</p>
                     <div class="flex justify-evenly gap-2">
@@ -333,14 +331,14 @@
                         <img class="w-6" src="./assets/img/icons8-vue-js.svg" alt="Vue.js">
                     </div>
                     <div class="flex flex-col mt-2 gap-2 items-center">
-                        <a href=""
+                        <a href="https://mariojzz.github.io/DigitalOcean/" target="_blank"
                             class="bg-blue-medium hover:hover:bg-orange-medium text-white font-semibold rounded-md w-28 text-center transition hover:scale-105 py-1">Demo</a>
-                        <a href=""
+                        <a href="https://github.com/MarioJZZ/DigitalOcean" target="_blank"
                             class="bg-blue-medium hover:hover:bg-orange-medium text-white font-semibold rounded-md w-28 text-center transition hover:scale-105 py-1">Repositorio</a>
                     </div>
                 </div>
                 <div
-                    class="bg-white p-14 flex flex-col justify-between item-center w-full text-center gap-2 transition hover:scale-105 shadow-sm rounded-md">
+                    class="bg-white p-14 flex flex-col justify-between item-center lg:w-full text-center gap-2 transition hover:scale-105 shadow-sm rounded-md">
                     <p class="font-semibold">Postcast FM</p>
                     <p class="text-gray-600">2022</p>
                     <div class="flex justify-evenly gap-2">
@@ -348,15 +346,15 @@
                         <img class="w-6" src="./assets/img/icons8-oreja.svg" alt="Bootstrap">
                     </div>
                     <div class="flex flex-col mt-2 gap-2 items-center">
-                        <a href=""
+                        <a href="https://postcast-site.netlify.app/" target="_blank"
                             class="bg-blue-medium hover:hover:bg-orange-medium text-white font-semibold rounded-md w-28 text-center transition hover:scale-105 py-1">Demo</a>
-                        <a href=""
+                        <a href="https://github.com/MarioJZZ/podcastfm" target="_blank"
                             class="bg-blue-medium hover:hover:bg-orange-medium text-white font-semibold rounded-md w-28 text-center transition hover:scale-105 py-1">Repositorio</a>
                     </div>
                 </div>
                 <div
-                    class="bg-white p-14 flex flex-col justify-between item-center w-full text-center gap-2 transition hover:scale-105 shadow-sm rounded-md">
-                    <p class="font-semibold">Web site comercio</p>
+                    class="bg-white p-14 flex flex-col justify-between item-center lg:w-full text-center gap-2 transition hover:scale-105 shadow-sm rounded-md">
+                    <p class="font-semibold">Sitio Web de Comercio</p>
                     <p class="text-gray-600">2022</p>
                     <div class="flex justify-evenly gap-2">
                         <img class="w-6" src="./assets/img/icons8-html.svg" alt="HTML">
@@ -364,14 +362,14 @@
                         <img class="w-6" src="./assets/img/icons8-javascript.svg" alt="JavaScript">
                     </div>
                     <div class="flex flex-col mt-2 gap-2 items-center">
-                        <a href=""
+                        <a href="https://cortinasjyr.netlify.app/" target="_blank"
                             class="bg-blue-medium hover:hover:bg-orange-medium text-white font-semibold rounded-md w-28 text-center transition hover:scale-105 py-1">Demo</a>
-                        <a href=""
+                        <a href="https://github.com/MarioJZZ/WebSite-Cortinas" target="_blank"
                             class="bg-blue-medium hover:hover:bg-orange-medium text-white font-semibold rounded-md w-28 text-center transition hover:scale-105 py-1">Repositorio</a>
                     </div>
                 </div>
                 <div
-                    class="bg-white p-14 flex flex-col justify-between item-center w-full text-center gap-2 transition hover:scale-105 shadow-sm rounded-md">
+                    class="bg-white p-14 flex flex-col justify-between item-center lg:w-full text-center gap-2 transition hover:scale-105 shadow-sm rounded-md">
                     <p class="font-semibold">Cuadricula</p>
                     <p class="text-gray-600">2022</p>
                     <div class="flex justify-evenly gap-2">
@@ -380,9 +378,9 @@
                         <img class="w-6" src="./assets/img/edgrid-logo.png" alt="EDGRID">
                     </div>
                     <div class="flex flex-col mt-2 gap-2 items-center">
-                        <a href=""
+                        <a href="https://mariojzz.github.io/ejercicio-cuadricula/" target="_blank"
                             class="bg-blue-medium hover:hover:bg-orange-medium text-white font-semibold rounded-md w-28 text-center transition hover:scale-105 py-1">Demo</a>
-                        <a href=""
+                        <a href="https://github.com/MarioJZZ/ejercicio-cuadricula" target="_blank"
                             class="bg-blue-medium hover:hover:bg-orange-medium text-white font-semibold rounded-md w-28 text-center transition hover:scale-105 py-1">Repositorio</a>
                     </div>
                 </div>
@@ -393,9 +391,8 @@
 
     <!-- Contacto -->
     <section
-        class="bg-section grid grid-cols-1 lg:grid-cols-2 items-center justify-center gap-10 mt-32 p-5 lg:p-10 container mx-auto rounded-md shadow-lg"
-        id="section7" data-aos="fade-up"
-        data-aos-anchor-placement="center-bottom">
+        class="bg-section grid grid-cols-1 lg:grid-cols-2 items-center justify-center gap-10 mt-36 p-5 lg:p-10 container mx-auto rounded-md shadow-lg"
+        id="section7" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
 
         <div class="hidden w-full lg:h-2/2 lg:flex lg:justify-center shadow-md">
             <img src="./assets/img/contacto.jpg" class="rounded-md w-full object-cover" alt="imagen ilustrativa">
@@ -404,7 +401,7 @@
         <div
             class="w-full h-full bg-white flex flex-col justify-evently px-4 lg:px-12 shadow-md overflow-hidden rounded-lg">
             <div class="mt-12">
-                <p class="text-3xl font-semibold text-gray-800 mb-6">Contacto</p>
+                <p class="text-xl md:text-2xl lg:text-3xl font-semibold text-gray-800 mb-6">Contacto</p>
                 <p class="text-xl mb-6">¿Quieres contactarme? <br>
                     Complete el siguiente formulario y me pondré en contacto con usted lo antes posible.</p>
             </div>
@@ -460,7 +457,7 @@
                 <p class="text-lg">© 2023 Desarollado por: Mario Jiménez</p>
             </div>
         </div>
-        <div class="container mx-auto py-6 flex justify-center lg:justify-end">
+        <div class="container mx-auto py-6 flex justify-center lg:justify-end mt-9 md:mt-0">
             <a href="#top" class="text-white hover:text-gray-200">
                 <i class="fas fa-arrow-up animate-icon"></i> Volver arriba
             </a>
@@ -476,7 +473,7 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
-      </script>
+    </script>
 </body>
 
 </html>
