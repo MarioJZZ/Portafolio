@@ -25,6 +25,7 @@ body {
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
+  perspective: 1000px; /* Añadir efecto de perspectiva */
 }
 
 

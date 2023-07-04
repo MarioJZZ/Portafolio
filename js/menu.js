@@ -59,3 +59,17 @@ window.addEventListener('DOMContentLoaded', adjustScroll);
 
 // Llama a la función cuando se cambia el hash de la URL, por ejemplo, al seleccionar una opción del menú móvil
 window.addEventListener('hashchange', adjustScroll);
+
+
+
+
+
+
+window.addEventListener('scroll', function() {
+    let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    
+    // Ajusta la velocidad de desplazamiento de las capas según tus preferencias
+    // Puedes multiplicar el scrollTop por diferentes valores para lograr diferentes efectos de parallax
+    document.querySelector('.parallax-layer').style.transform = 'translateY(' + (scrollTop * 0.5) + 'px)';
+  });
+  
